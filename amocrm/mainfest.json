@@ -1,0 +1,9 @@
+{
+  "name": "Акции / Скидки",
+  "version": "1.0",
+  "author": "Your Name",
+  "description": "Виджет для применения акций к сделке",
+  "main": "init.js",
+  "settings": "settings.js",
+  "styles": ["style.css"]
+}

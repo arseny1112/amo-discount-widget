@@ -1,0 +1,10 @@
+#loader { display: none; font-weight: bold; }
+#loader.active { display: block; }
+
+.promo { padding: 8px; margin: 5px 0; border: 1px solid #ccc; cursor: pointer; }
+.promo.selected { background-color: #eef; border-color: #66f; }
+
+.error { color: red; }
+
+#calculation { margin-top: 10px; }
+#actions { margin-top: 10px; }
