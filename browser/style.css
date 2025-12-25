@@ -1,10 +1,92 @@
+a, p{
+    margin: 0;
+    padding: 0;
+}
+
 #loader { display: none; font-weight: bold; }
 #loader.active { display: block; }
 
-.promo { padding: 8px; margin: 5px 0; border: 1px solid #ccc; cursor: pointer; }
+.promo { 
+    padding: 8px;
+     margin: 5px 0; 
+     border: 1px solid #ccc;
+      cursor: pointer; 
+    }
 .promo.selected { background-color: #eef; border-color: #66f; }
 
 .error { color: red; }
 
 #calculation { margin-top: 10px; }
 #actions { margin-top: 10px; }
+
+#widget-promotions {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #313942;
+}
+
+#deal-info {
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  background: #f7f8fa;
+  border-radius: 4px;
+}
+
+#contact-info {
+  margin-bottom: 12px;
+  padding: 8px 10px;
+  background: #f7f8fa;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+#promotions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#promotions .promo {
+  padding: 10px;
+  border: 1px solid #dfe3e6;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+#promotions .promo:hover {
+  border-color: #4c8bf7;
+  background: #f4f8ff;
+}
+
+#promotions .promo.selected {
+  border-color: #4c8bf7;
+  background: #eef4ff;
+}
+
+#promotions .promo b {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+#promotions .promo div {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+
+
+.deal-info__el,
+.contact-info__el{
+        font-size: 20px;
+    font-family: system-ui;
+    font-weight: 400;
+}
+
+.calculation__el{
+      font-size: 20px;
+    font-family: system-ui;
+    font-weight: 400;
+}

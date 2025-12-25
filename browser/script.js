@@ -132,9 +132,9 @@
     const promotions = params.promotions || [];
 
     showLoader(false);
-    el('deal-info').innerHTML = `Сделка #${leadId} <br>Текущий бюджет: <b>${formatMoney(oldBudget)}</b>`;
+    el('deal-info').innerHTML = `<p class="deal-info__el">Сделка #${leadId}</p> <br><p class="deal-info__el">Текущий бюджет: <b>${formatMoney(oldBudget)}</p></b>`;
     if (contact) {
-      el('contact-info').innerHTML = `Контакт: <b>${contact.name || (contact.first_name + ' ' + (contact.last_name||''))}</b><br>Тип клиента: <b>${contactSource || '—'}</b>`;
+      el('contact-info').innerHTML = `<p class="contact-info__el">Контакт: <b>${contact.name || (contact.first_name + ' ' + (contact.last_name||''))}</p></b><br><p class="contact-info__el">Тип клиента: <b>${contactSource || '—'}</p></b>`;
     } else {
       el('contact-info').innerHTML = `<span class="error">У сделки не найден основной контакт. Некоторые акции могут быть недоступны.</span>`;
     }
@@ -201,10 +201,10 @@
       el('calculation').style.display = 'block';
       el('actions').style.display = 'block';
       el('calculation').innerHTML = `
-        <div>Название акции: <b>${selected.name}</b></div>
-        <div>Старый бюджет: ${formatMoney(oldBudget)}</div>
-        <div>Сумма скидки: ${formatMoney(calculatedDiscount)}</div>
-        <div>Новый бюджет: <b>${formatMoney(newBudgetVal)}</b></div>
+        <div class="calculation__el">Название акции: <b>${selected.name}</b></div>
+        <div class="calculation__el">Старый бюджет: ${formatMoney(oldBudget)}</div>
+        <div class="calculation__el">Сумма скидки: ${formatMoney(calculatedDiscount)}</div>
+        <div class="calculation__el">Новый бюджет: <b>${formatMoney(newBudgetVal)}</b></div>
       `;
       setStatus('');
     }
